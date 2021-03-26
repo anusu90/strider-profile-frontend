@@ -1,4 +1,8 @@
 import React from 'react';
+import gymLogImg from "./gymlog/gymlog.png"
+import chatAppImg from "./chatapp/chatapp2.png"
+import gitHubImg from "./githubclone/github.png"
+import todoAppImg from "./todoapp/todoapp.png"
 
 export default function Portfolio() {
 
@@ -14,91 +18,51 @@ export default function Portfolio() {
                     <div className="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">
                             <li data-filter="*" className="filter-active">All</li>
-                            <li data-filter=".filter-app">Highlights</li>
-                            <li data-filter=".filter-card">Full Stack Mern</li>
-                            <li data-filter=".filter-web">Web</li>
+                            <li data-filter=".filter-app">Full Stack</li>
+                            <li data-filter=".filter-card">NODE</li>
+                            <li data-filter=".filter-web">ReactJS</li>
                         </ul>
                     </div>
                 </div>
                 <div className="row portfolio-container" data-aos="fade-up" data-aos-delay={100}>
                     <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-1.jpg" className="img-fluid" alt="" />
+                            <img src={gymLogImg} className="img-fluid" alt="" />
                             <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" className="venobox" title="App 1"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-2.jpg" className="img-fluid" alt="" />
-                            <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" className="venobox" title="Web 3"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
+                                <a href={gymLogImg} data-gall="portfolioGallery" className="venobox" title="App 1"><i className="bx bx-zoom-in" /></a>
+                                <a href="https://youthful-goldstine-c7cf0d.netlify.app/" target="_blank" title="Open Web Page"><i className="bx bx-plus" /></a>
+                                <a href="https://github.com/anusu90/fitness-logger-frontend" title="Github link" target="_blank"><i className="bx bx-link" /></a>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-3.jpg" className="img-fluid" alt="" />
+                            <img src={chatAppImg} className="img-fluid" alt="" />
                             <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" className="venobox" title="App 2"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-4.jpg" className="img-fluid" alt="" />
-                            <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" className="venobox" title="Card 2"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
+                                <a href={chatAppImg} data-gall="portfolioGallery" className="venobox" title="App 1"><i className="bx bx-zoom-in" /></a>
+                                <a href="https://stupefied-hawking-912e7d.netlify.app/" target="_blank" title="Open Web Page"><i className="bx bx-plus" /></a>
+                                <a href="https://github.com/anusu90/chat-app-frontend" title="Github link" target="_blank"><i className="bx bx-link" /></a>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-5.jpg" className="img-fluid" alt="" />
+                            <img src={todoAppImg} className="img-fluid" alt="" />
                             <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" className="venobox" title="Web 2"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
+                                <a href={todoAppImg} data-gall="portfolioGallery" className="venobox" title="Web 3"><i className="bx bx-zoom-in" /></a>
+                                <a href="https://wizardly-liskov-a0396b.netlify.app" title="Website"><i className="bx bx-plus" /></a>
+                                <a href="https://github.com/anusu90/Guvi-Todo-App" title="Github Link"><i className="bx bx-link" /></a>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-6.jpg" className="img-fluid" alt="" />
-                            <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" className="venobox" title="App 3"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
-                            </div>
-                        </div>
-                    </div>
+
                     <div className="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-7.jpg" className="img-fluid" alt="" />
+                            <img src={gitHubImg} className="img-fluid" alt="" />
                             <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" className="venobox" title="Card 1"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-8.jpg" className="img-fluid" alt="" />
-                            <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" className="venobox" title="Card 3"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div className="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-9.jpg" className="img-fluid" alt="" />
-                            <div className="portfolio-links">
-                                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" className="venobox" title="Web 3"><i className="bx bx-plus" /></a>
-                                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link" /></a>
+                                <a href={gitHubImg} data-gall="portfolioGallery" className="venobox" title="Card 2"><i className="bx bx-zooom-in" /></a>
+                                <a href="https://wonderful-darwin-60d250.netlify.app/" title="More Details"><i className="bx bx-plus" /></a>
+                                <a href="https://github.com/anusu90/git-clone-2" title="More Details"><i className="bx bx-link" /></a>
                             </div>
                         </div>
                     </div>
