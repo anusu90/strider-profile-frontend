@@ -7,31 +7,29 @@ export default function Resume() {
             <div className="container">
                 <div className="section-title">
                     <h2>Resume</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-              in iste officiis commodi quidem hic quas.</p>
+                    <p>B. Tech Graduate from IIT, with aptitute towards problem solving and quick learning abililities. I work great in teams and have experience in leading a group of over 50 people.</p>
                 </div>
                 <div className="row">
                     <div className="col-lg-6" data-aos="fade-up">
                         <h3 className="resume-title">Sumary</h3>
                         <div className="resume-item pb-0">
-                            <h4>Alex Smith</h4>
-                            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and
-                            developing user-centered digital/print marketing material from initial concept to final, polished
-                    deliverable.</em></p>
+                            <h4>Anunay Sinha</h4>
+                            <p><em>Innovative and deadline-driven full stack web developer with strong foundation on ReactJS, NodeJS , Express, MongoDB and ability to create polished and ready to deploy
+                                apps right from initial concepts to final product</em></p>
                             <ul>
-                                <li>Portland par 127,Orlando, FL</li>
-                                <li>(123) 456-7891</li>
-                                <li>alice.barkley@example.com</li>
+                                <li>25 Jail Road East</li>
+                                <li>(+91) 9840917857</li>
+                                <li>anusu90@gmail.com</li>
                             </ul>
                         </div>
                         <h3 className="resume-title">Education</h3>
                         <div className="resume-item">
-                            <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                            <h5>2015 - 2016</h5>
-                            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui
-                  ut dignissimos deleniti nerada porti sand markend</p>
+                            <h4>Bachelor of Technology</h4>
+                            <h5>2009 - 2013</h5>
+                            <p><em>Indian Institute of Technology, BHU, Varanasi</em></p>
+                            <p>Mechanical Engineering</p>
+                            <p>Explored programming in Python, Fortran and C</p>
+                            <p>Departmenral Rank Holder</p>
                         </div>
                         <div className="resume-item">
                             <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>

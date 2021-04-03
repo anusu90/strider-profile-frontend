@@ -8,16 +8,16 @@ export default function About() {
             <div className="container">
                 <div className="section-title">
                     <h2>About</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-              in iste officiis commodi quidem hic quas.</p>
+                    <p>While in college and after graduating writing code to solve problems always attracted me. This with the creative dimension of a web design,
+                    a strong push towards taking everyone online to connect and grow, attracted me towards becoming a full stack web developer.
+                    </p>
                 </div>
                 <div className="row">
                     <div className="col-lg-4" data-aos="fade-right">
                         <img src="assets/img/profile-img.jpg" className="img-fluid" alt="" />
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3>UI/UX Designer &amp; Web Developer.</h3>
+                        <h3>Full Stack Web Developer &amp; Designer </h3>
                         <p className="font-italic">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                             dolore
@@ -26,17 +26,17 @@ export default function About() {
                         <div className="row">
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i className="icofont-rounded-right" /> <strong>Birthday:</strong> 1 May 1995</li>
-                                    <li><i className="icofont-rounded-right" /> <strong>Website:</strong> www.example.com</li>
-                                    <li><i className="icofont-rounded-right" /> <strong>Phone:</strong> +123 456 7890</li>
-                                    <li><i className="icofont-rounded-right" /> <strong>City:</strong> City : New York, USA</li>
+                                    <li><i className="icofont-rounded-right" /> <strong>Birthday:</strong> 06 October</li>
+                                    <li><i className="icofont-rounded-right" /> <strong>Website:</strong> www.anunaysinha.online</li>
+                                    <li><i className="icofont-rounded-right" /> <strong>Phone:</strong> (+91)9840917857</li>
+                                    <li><i className="icofont-rounded-right" /> <strong>City:</strong> City :Ranchi, Jharkhand</li>
                                 </ul>
                             </div>
                             <div className="col-lg-6">
                                 <ul>
                                     <li><i className="icofont-rounded-right" /> <strong>Age:</strong> 30</li>
-                                    <li><i className="icofont-rounded-right" /> <strong>Degree:</strong> Master</li>
-                                    <li><i className="icofont-rounded-right" /> <strong>PhEmailone:</strong> email@example.com</li>
+                                    <li><i className="icofont-rounded-right" /> <strong>Degree:</strong> B. Tech. (IIT) </li>
+                                    <li><i className="icofont-rounded-right" /> <strong>Email:</strong> anusu90@gmail.com</li>
                                     <li><i className="icofont-rounded-right" /> <strong>Freelance:</strong> Available</li>
                                 </ul>
                             </div>
