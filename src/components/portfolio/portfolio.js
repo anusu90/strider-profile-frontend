@@ -3,6 +3,7 @@ import gymLogImg from "./gymlog/gymlog.png"
 import chatAppImg from "./chatapp/chatapp2.png"
 import gitHubImg from "./githubclone/github.png"
 import todoAppImg from "./todoapp/todoapp.png"
+import zoomCloneImg from "./zoomclone/zoomclonenode.png"
 
 export default function Portfolio() {
 
@@ -50,19 +51,29 @@ export default function Portfolio() {
                             <img src={todoAppImg} className="img-fluid" alt="" />
                             <div className="portfolio-links">
                                 <a href={todoAppImg} data-gall="portfolioGallery" className="venobox" title="Web 3"><i className="bx bx-zoom-in" /></a>
-                                <a href="https://wizardly-liskov-a0396b.netlify.app" title="Website"><i className="bx bx-plus" /></a>
-                                <a href="https://github.com/anusu90/Guvi-Todo-App" title="Github Link"><i className="bx bx-link" /></a>
+                                <a href="https://wizardly-liskov-a0396b.netlify.app" target="_blank" title="Website"><i className="bx bx-plus" /></a>
+                                <a href="https://github.com/anusu90/Guvi-Todo-App" target="_blank" title="Github Link"><i className="bx bx-link" /></a>
                             </div>
                         </div>
                     </div>
 
                     <div className="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div className="portfolio-wrap">
+                            <img src={zoomCloneImg} className="img-fluid" alt="" />
+                            <div className="portfolio-links">
+                                <a href={zoomCloneImg} data-gall="portfolioGallery" className="venobox" title="Card 2"><i className="bx bx-zooom-in" /></a>
+                                <a href="https://node-zoom-clone-1.herokuapp.com" target="_blank" title="More Details"><i className="bx bx-plus" /></a>
+                                <a href="https://github.com/anusu90/zoom-clone-node-1" target="_blank" title="More Details"><i className="bx bx-link" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div className="portfolio-wrap">
                             <img src={gitHubImg} className="img-fluid" alt="" />
                             <div className="portfolio-links">
                                 <a href={gitHubImg} data-gall="portfolioGallery" className="venobox" title="Card 2"><i className="bx bx-zooom-in" /></a>
-                                <a href="https://wonderful-darwin-60d250.netlify.app/" title="More Details"><i className="bx bx-plus" /></a>
-                                <a href="https://github.com/anusu90/git-clone-2" title="More Details"><i className="bx bx-link" /></a>
+                                <a href="https://wonderful-darwin-60d250.netlify.app/" target="_blank" title="More Details"><i className="bx bx-plus" /></a>
+                                <a href="https://github.com/anusu90/git-clone-2" target="_blank" title="More Details"><i className="bx bx-link" /></a>
                             </div>
                         </div>
                     </div>
