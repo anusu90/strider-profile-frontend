@@ -1,6 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { sendMailToMe, sendMailToUser } from "../sendgrid/sendgrid"
 
 export default function Contact() {
+
+
+    let [name, setName] = useState("")
+    let [email, setEmail] = useState("")
+    let [subject, setSubject] = useState("")
+    let [message, setMessage] = useState("")
+
+    const handleSendEmail = async () => {
+
+        let data = {
+            name,
+            email,
+            subject,
+            message
+        }
+        const sendMailtoMeRequest = await sendMailToMe(data)
+        const sendMailtoUserRequest = await sendMailToUser(email)
+    }
+
     return (
         <section id="contact" className="contact">
             <div className="container">
@@ -34,23 +54,23 @@ export default function Contact() {
                             <div className="form-row">
                                 <div className="form-group col-md-6">
                                     <label htmlFor="name">Your Name</label>
-                                    <input type="text" name="name" className="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <input type="text" name="name" className="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value={name} onChange={(e) => { setName(e.target.value) }} required />
                                     <div className="validate" />
                                 </div>
                                 <div className="form-group col-md-6">
                                     <label htmlFor="name">Your Email</label>
-                                    <input type="email" className="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                                    <input type="email" className="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" value={email} onChange={(e) => { setEmail(e.target.value) }} required />
                                     <div className="validate" />
                                 </div>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="name">Subject</label>
-                                <input type="text" className="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <input type="text" className="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" value={subject} onChange={(e) => { setSubject(e.target.value) }} required />
                                 <div className="validate" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="name">Message</label>
-                                <textarea className="form-control" name="message" rows={10} data-rule="required" data-msg="Please write something for us" defaultValue={""} />
+                                <textarea className="form-control" name="message" rows={10} data-rule="required" data-msg="Please write something for us" defaultValue={""} value={message} onChange={(e) => { setMessage(e.target.value) }} required />
                                 <div className="validate" />
                             </div>
                             <div className="mb-3">
@@ -58,7 +78,7 @@ export default function Contact() {
                                 <div className="error-message" />
                                 <div className="sent-message">Your message has been sent. Thank you!</div>
                             </div>
-                            <div className="text-center"><button type="submit">Send Message</button></div>
+                            <div className="text-center"><button type="submit" onClick={handleSendEmail}>Send Message</button></div>
                         </form>
                     </div>
                 </div>

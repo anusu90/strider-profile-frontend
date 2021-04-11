@@ -17,7 +17,7 @@ export default function Resume() {
                             <p><em>Innovative and deadline-driven full stack web developer with strong foundation on ReactJS, NodeJS , Express, MongoDB and ability to create polished and ready to deploy
                                 apps right from initial concepts to final product</em></p>
                             <ul>
-                                <li>25 Jail Road East</li>
+                                <li>25 Jail Road East, Ranchi</li>
                                 <li>(+91) 9840917857</li>
                                 <li>anusu90@gmail.com</li>
                             </ul>
@@ -29,7 +29,7 @@ export default function Resume() {
                             <p><em>Indian Institute of Technology, BHU, Varanasi</em></p>
                             <p>Mechanical Engineering</p>
                             <p>Explored programming in Python, Fortran and C</p>
-                            <p>Departmenral Rank Holder</p>
+                            <p>Departmental Rank Holder</p>
                         </div>
                         <div className="resume-item">
                             <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
@@ -41,31 +41,37 @@ export default function Resume() {
                         </div>
                     </div>
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-                        <h3 className="resume-title">Professional Experience</h3>
+                        <h3 className="resume-title">Professional Experience &amp; Certification</h3>
                         <div className="resume-item">
-                            <h4>Senior graphic design specialist</h4>
-                            <h5>2019 - Present</h5>
-                            <p><em>Experion, New York, NY </em></p>
+                            <h4>Full Stack Bootcamp</h4>
+                            <p><em>GUVI Zen Classes</em></p>
+                            <h5>Oct 2020 - April 2021</h5>
+
                             <ul>
-                                <li>Lead in the design, development, and implementation of the graphic, layout, and production
-                    communication materials</li>
-                                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
-                    project. </li>
-                                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
-                    design</li>
-                                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                                <li>MERN Stack</li>
+                                <li>AWS</li>
+                                <li>NGINX</li>
+                                <li>SocketIO/WebRTC</li>
                             </ul>
                         </div>
                         <div className="resume-item">
-                            <h4>Graphic design specialist</h4>
-                            <h5>2017 - 2018</h5>
-                            <p><em>Stepping Stone Advertising, New York, NY</em></p>
+                            <h4>Advanced Certification in Machine Learning &amp; Cloud </h4>
+                            <p><em>UPGRAD</em></p>
+                            <h5>Oct 2020 - Current</h5>
+
                             <ul>
-                                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
-                    advertisements).</li>
-                                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                                <li>Big-Data using Hadoop</li>
+                                <li>SQL &amp; HIVE</li>
+                                <li>Spark &amp; PySpark</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <div className="resume-item">
+                            <h4>Python Certification</h4>
+                            <h5>2020 - Current</h5>
+                            <p><em>UDEMY</em></p>
+                            <ul>
+                                <li>Learnt basic as well as intermediate concepts of Python </li>
                             </ul>
                         </div>
                     </div>
