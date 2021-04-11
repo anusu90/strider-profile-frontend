@@ -1,12 +1,16 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 export default function Resume() {
-    return (
 
+    let resumeURL = "https://drive.google.com/file/d/18C_8xdBPNxuwbGnfx7AGB4QUrPx57igM/view?usp=sharing";
+
+    return (
         < section id="resume" className="resume" >
             <div className="container">
                 <div className="section-title">
-                    <h2>Resume</h2>
+                    <h2>Resume  &nbsp;&nbsp; <a href={resumeURL} target="_blank"><FontAwesomeIcon icon={faDownload} /></a></h2>
                     <p>B. Tech Graduate from IIT, with aptitute towards problem solving and quick learning abililities. I work great in teams and have experience in leading a group of over 50 people.</p>
                 </div>
                 <div className="row">
@@ -32,12 +36,14 @@ export default function Resume() {
                             <p>Departmental Rank Holder</p>
                         </div>
                         <div className="resume-item">
-                            <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                            <h5>2010 - 2014</h5>
-                            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius
-                            unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart
-                  dila</p>
+                            <h4>SKill Sets and Hobbies</h4>
+                            <h5>Problem Solving || Quick learner || Hard-working</h5>
+                            <p><em>After joining Guvi classes despite being a mechanical Engineering graduate I quickly grasped to all the concepts and received very positive feedback from the faculty there.</em></p>
+                            <h5>History || Cricket || Learning Languages</h5>
+                            <p><em>Can have long discussion over History or Cricket or History of Cricket</em></p>
+                            {/* <p><em>Over last few years got the opportunity to live in Maharashtra and Tamil Nadu where I picked up Marathi and Tamizh. Actually still picking Tamizh</em></p> */}
+                            <p><em>Can speak English, Hindi, Bhojpuri, Marathi and bit of Tamizh. </em></p>
+                            <p><em>Open to work anywhere</em></p>
                         </div>
                     </div>
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
@@ -48,7 +54,8 @@ export default function Resume() {
                             <h5>Oct 2020 - April 2021</h5>
 
                             <ul>
-                                <li>MERN Stack</li>
+                                <li>ReactJS || Express || NodeJS || MongoDB</li>
+                                <li>SQL</li>
                                 <li>AWS</li>
                                 <li>NGINX</li>
                                 <li>SocketIO/WebRTC</li>
@@ -68,10 +75,11 @@ export default function Resume() {
                         </div>
                         <div className="resume-item">
                             <h4>Python Certification</h4>
-                            <h5>2020 - Current</h5>
+                            <h5>Nov 2020 - Current</h5>
                             <p><em>UDEMY</em></p>
                             <ul>
-                                <li>Learnt basic as well as intermediate concepts of Python </li>
+                                <li>Learnt basic as well as intermediate concepts of Python including libraries like Numpy, Pandas, Matplotlib, BeautifulSoup </li>
+                                <li>In process of learning Flask </li>
                             </ul>
                         </div>
                     </div>

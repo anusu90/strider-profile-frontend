@@ -1,4 +1,4 @@
-import sgMail from ('@sendgrid/mail');
+import sgMail from "@sendgrid/mail"
 sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY)
 
 export function sendMailToMe(data) {

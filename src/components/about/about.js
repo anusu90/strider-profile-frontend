@@ -19,9 +19,7 @@ export default function About() {
                     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                         <h3>Full Stack Web Developer &amp; Designer </h3>
                         <p className="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore
-                            magna aliqua.
+                            This is 2 cents about me. Contact me if you like my work and maybe together we can build something good and interesting.
               </p>
                         <div className="row">
                             <div className="col-lg-6">
@@ -41,12 +39,7 @@ export default function About() {
                                 </ul>
                             </div>
                         </div>
-                        <p>
-                            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et
-                            ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-                            Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-              </p>
+                        <p></p>
                     </div>
                 </div>
             </div>

@@ -1,24 +1,54 @@
-import React, { useState } from 'react';
-import { sendMailToMe, sendMailToUser } from "../sendgrid/sendgrid"
+import React, { useState, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSync, faCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact() {
-
 
     let [name, setName] = useState("")
     let [email, setEmail] = useState("")
     let [subject, setSubject] = useState("")
     let [message, setMessage] = useState("")
+    let [loading, setLoading] = useState(false)
+    let [displayMessage, setDisplayMessage] = useState(false)
 
-    const handleSendEmail = async () => {
+    let messageRef = useRef(null)
 
+    const btnStyle1 = {
+        width: "200px"
+    }
+
+    const handleSendEmail = async (e) => {
+        setLoading(true)
+        e.preventDefault();
+        let url = process.env.REACT_APP_BACKEND
         let data = {
             name,
             email,
             subject,
             message
         }
-        const sendMailtoMeRequest = await sendMailToMe(data)
-        const sendMailtoUserRequest = await sendMailToUser(email)
+
+        let sendMailReq = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: JSON.stringify(data)
+        })
+
+        let sendMailBody = await sendMailReq.json();
+        console.log(sendMailBody)
+        setLoading(false)
+        setDisplayMessage(true)
+        setTimeout(() => {
+            setDisplayMessage(false)
+        }, 2000);
+
+        setName("")
+        setEmail("")
+        setSubject("")
+        setMessage("")
     }
 
     return (
@@ -50,7 +80,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                        <form role="form" className="php-email-form">
                             <div className="form-row">
                                 <div className="form-group col-md-6">
                                     <label htmlFor="name">Your Name</label>
@@ -73,12 +103,14 @@ export default function Contact() {
                                 <textarea className="form-control" name="message" rows={10} data-rule="required" data-msg="Please write something for us" defaultValue={""} value={message} onChange={(e) => { setMessage(e.target.value) }} required />
                                 <div className="validate" />
                             </div>
-                            <div className="mb-3">
-                                <div className="loading">Loading</div>
-                                <div className="error-message" />
-                                <div className="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div className="text-center"><button type="submit" onClick={handleSendEmail}>Send Message</button></div>
+                            {
+                                (displayMessage) ? (
+                                    <div className="mb-3" ref={messageRef}>
+                                        <FontAwesomeIcon color="green" icon={faCheck} /> &nbsp; <div className="message" style={{ color: "green", display: "inline-block" }}>Your message has been sent. Thank you!</div>
+                                    </div>
+                                ) : <div></div>
+                            }
+                            <div className="text-center"><button type="submit" style={btnStyle1} onClick={(e) => handleSendEmail(e)}>{(loading) ? <FontAwesomeIcon icon={faSync} spin /> : "Send Message"}</button></div>
                         </form>
                     </div>
                 </div>
